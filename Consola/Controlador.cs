@@ -11,6 +11,7 @@ namespace Consola
         private Vista _vista;
         private Gestor _sistema;
         private Dictionary<string, Action> _casosDeUso;
+        private Dictionary<string, double> _tiposDePan;
         public Controlador(Vista vista, Gestor businessLogic)
         {
             _vista = vista;
@@ -20,6 +21,12 @@ namespace Consola
                 { "Alta de paciente", DarDeAlta },
                 { "Comprobación de PCR", VerificarPruebaPCR },
                 { "Mostrar Ingresados", MostarIngresados}
+            };
+            _tiposDePan = new Dictionary<string, double>(){
+                {"Pan de trigo", 1.00},
+                {"Pan de arroz", 1.50},
+                {"Pan de soja", 1.40},
+                {"Pan de trigo integral", 0.70}
             };
         }
 
