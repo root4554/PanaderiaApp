@@ -1,11 +1,66 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "AppSystem/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "data": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/AppSystem.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AppSystem.dll": {}
+        }
+      },
+      "data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Entitdades": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/data.dll": {}
+        }
+      },
+      "Entitdades/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Entitdades.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Entitdades.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "AppSystem/1.0.0": {
+      "type": "project",
+      "path": "../AppSystem/AppSystem.csproj",
+      "msbuildProject": "../AppSystem/AppSystem.csproj"
+    },
+    "data/1.0.0": {
+      "type": "project",
+      "path": "../data/data.csproj",
+      "msbuildProject": "../data/data.csproj"
+    },
+    "Entitdades/1.0.0": {
+      "type": "project",
+      "path": "../Entitdades/Entitdades.csproj",
+      "msbuildProject": "../Entitdades/Entitdades.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "AppSystem >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\1daw3\\.nuget\\packages\\": {}
@@ -13,11 +68,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\1daw3\\panaderia\\Consola\\Consola.csproj",
+      "projectUniqueName": "c:\\Users\\1daw3\\panaderia\\Consola\\Consola.csproj",
       "projectName": "Consola",
-      "projectPath": "C:\\Users\\1daw3\\panaderia\\Consola\\Consola.csproj",
+      "projectPath": "c:\\Users\\1daw3\\panaderia\\Consola\\Consola.csproj",
       "packagesPath": "C:\\Users\\1daw3\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\1daw3\\panaderia\\Consola\\obj\\",
+      "outputPath": "c:\\Users\\1daw3\\panaderia\\Consola\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\1daw3\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -33,7 +88,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "c:\\Users\\1daw3\\panaderia\\AppSystem\\AppSystem.csproj": {
+              "projectPath": "c:\\Users\\1daw3\\panaderia\\AppSystem\\AppSystem.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

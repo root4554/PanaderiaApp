@@ -1,6 +1,5 @@
-﻿namespace Entitdades;
-public class Modelos
-{
+﻿namespace Entidades;
+
 
     public class Tienda
     {
@@ -15,6 +14,5 @@ public class Modelos
             CantidadDepan = cantidadPan;
             }
 
-        public override string ToString()=>$"Nombre de la tienda: {NombreTienda} \nNombre del dueño: {NombreDueño} \nCantidad de pan: {CantidadPan}";
+        public override string ToString()=>$"Nombre de la tienda: {NombreTienda} \nNombre del dueño: {NombreDueño} \nCantidad de pan: {CantidadDepan}";
     }
-}

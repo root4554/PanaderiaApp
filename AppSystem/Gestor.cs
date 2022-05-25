@@ -1,4 +1,8 @@
 ﻿namespace AppSystem;
+using System.Collections.Generic;
+using data;
+using Entidades;
+
 
 
 public class Gestor
@@ -7,7 +11,6 @@ public class Gestor
     {
         _repoPanaderia = repoPanaderia;
         panaderias = _repoPanaderia.Leer();
-
     }
     RepoPanaderiaCSV _repoPanaderia;
     public List<Tienda> panaderias {get; set;} = new();
@@ -63,7 +66,11 @@ public class Gestor
     public void Comprar(Tienda tienda, string pan, int stock)
     {
         tienda.CantidadDepan[pan] -= stock;
+    
     }
+
+    // === 
+    
 
     
 }

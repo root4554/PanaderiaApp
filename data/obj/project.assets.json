@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "Entitdades/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Entitdades.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Entitdades.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Entitdades/1.0.0": {
+      "type": "project",
+      "path": "../Entitdades/Entitdades.csproj",
+      "msbuildProject": "../Entitdades/Entitdades.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "Entitdades >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\1daw3\\.nuget\\packages\\": {}
@@ -13,11 +32,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\1daw3\\panaderia\\data\\data.csproj",
+      "projectUniqueName": "c:\\Users\\1daw3\\panaderia\\data\\data.csproj",
       "projectName": "data",
-      "projectPath": "C:\\Users\\1daw3\\panaderia\\data\\data.csproj",
+      "projectPath": "c:\\Users\\1daw3\\panaderia\\data\\data.csproj",
       "packagesPath": "C:\\Users\\1daw3\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\1daw3\\panaderia\\data\\obj\\",
+      "outputPath": "c:\\Users\\1daw3\\panaderia\\data\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\1daw3\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -33,7 +52,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "c:\\Users\\1daw3\\panaderia\\Entitdades\\Entitdades.csproj": {
+              "projectPath": "c:\\Users\\1daw3\\panaderia\\Entitdades\\Entitdades.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

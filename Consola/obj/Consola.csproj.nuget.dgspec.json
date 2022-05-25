@@ -1,17 +1,191 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\1daw3\\panaderia\\Consola\\Consola.csproj": {}
+    "c:\\Users\\1daw3\\panaderia\\Consola\\Consola.csproj": {}
   },
   "projects": {
-    "C:\\Users\\1daw3\\panaderia\\Consola\\Consola.csproj": {
+    "c:\\Users\\1daw3\\panaderia\\AppSystem\\AppSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\1daw3\\panaderia\\Consola\\Consola.csproj",
-        "projectName": "Consola",
-        "projectPath": "C:\\Users\\1daw3\\panaderia\\Consola\\Consola.csproj",
+        "projectUniqueName": "c:\\Users\\1daw3\\panaderia\\AppSystem\\AppSystem.csproj",
+        "projectName": "AppSystem",
+        "projectPath": "c:\\Users\\1daw3\\panaderia\\AppSystem\\AppSystem.csproj",
         "packagesPath": "C:\\Users\\1daw3\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\1daw3\\panaderia\\Consola\\obj\\",
+        "outputPath": "c:\\Users\\1daw3\\panaderia\\AppSystem\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\1daw3\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "c:\\Users\\1daw3\\panaderia\\data\\data.csproj": {
+                "projectPath": "c:\\Users\\1daw3\\panaderia\\data\\data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "c:\\Users\\1daw3\\panaderia\\Consola\\Consola.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "c:\\Users\\1daw3\\panaderia\\Consola\\Consola.csproj",
+        "projectName": "Consola",
+        "projectPath": "c:\\Users\\1daw3\\panaderia\\Consola\\Consola.csproj",
+        "packagesPath": "C:\\Users\\1daw3\\.nuget\\packages\\",
+        "outputPath": "c:\\Users\\1daw3\\panaderia\\Consola\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\1daw3\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "c:\\Users\\1daw3\\panaderia\\AppSystem\\AppSystem.csproj": {
+                "projectPath": "c:\\Users\\1daw3\\panaderia\\AppSystem\\AppSystem.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "c:\\Users\\1daw3\\panaderia\\data\\data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "c:\\Users\\1daw3\\panaderia\\data\\data.csproj",
+        "projectName": "data",
+        "projectPath": "c:\\Users\\1daw3\\panaderia\\data\\data.csproj",
+        "packagesPath": "C:\\Users\\1daw3\\.nuget\\packages\\",
+        "outputPath": "c:\\Users\\1daw3\\panaderia\\data\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\1daw3\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "c:\\Users\\1daw3\\panaderia\\Entitdades\\Entitdades.csproj": {
+                "projectPath": "c:\\Users\\1daw3\\panaderia\\Entitdades\\Entitdades.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "c:\\Users\\1daw3\\panaderia\\Entitdades\\Entitdades.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "c:\\Users\\1daw3\\panaderia\\Entitdades\\Entitdades.csproj",
+        "projectName": "Entitdades",
+        "projectPath": "c:\\Users\\1daw3\\panaderia\\Entitdades\\Entitdades.csproj",
+        "packagesPath": "C:\\Users\\1daw3\\.nuget\\packages\\",
+        "outputPath": "c:\\Users\\1daw3\\panaderia\\Entitdades\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\1daw3\\AppData\\Roaming\\NuGet\\NuGet.Config",
