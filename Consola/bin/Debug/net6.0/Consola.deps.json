@@ -1,0 +1,64 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Consola/1.0.0": {
+        "dependencies": {
+          "AppSystem": "1.0.0",
+          "Entidades": "1.0.0"
+        },
+        "runtime": {
+          "Consola.dll": {}
+        }
+      },
+      "AppSystem/1.0.0": {
+        "dependencies": {
+          "Entidades": "1.0.0",
+          "data": "1.0.0"
+        },
+        "runtime": {
+          "AppSystem.dll": {}
+        }
+      },
+      "data/1.0.0": {
+        "dependencies": {
+          "Entidades": "1.0.0"
+        },
+        "runtime": {
+          "data.dll": {}
+        }
+      },
+      "Entidades/1.0.0": {
+        "runtime": {
+          "Entidades.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Consola/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AppSystem/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Entidades/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

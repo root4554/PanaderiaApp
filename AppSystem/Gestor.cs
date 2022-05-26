@@ -1,9 +1,9 @@
-﻿namespace AppSystem;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using data;
 using Entidades;
 
 
+namespace AppSystem;
 
 public class Gestor
 {
@@ -16,9 +16,16 @@ public class Gestor
     public List<Tienda> panaderias {get; set;} = new();
 
     // === Gestion de tiendas ===
-    public void RegistrarIngreso(Tienda tienda)
+    public void RegistrarIngreso(Tienda t)
     {
-        panaderias.Add(tienda);
+        panaderias.Add(t);
+        _repoPanaderia.Guardar(panaderias);
+    }
+
+   // === Add Stock ===
+    public void AddStock(Panderia p, int cantidad)
+    {
+        p.StockDelDia += cantidad;
         _repoPanaderia.Guardar(panaderias);
     }
     
@@ -62,14 +69,13 @@ public class Gestor
         }
     }
     
-    // === hacer compra ===
-    public void Comprar(Tienda tienda, string pan, int stock)
-    {
-        tienda.CantidadDepan[pan] -= stock;
-    
-    }
+    // === Hacer compra ===
+     
 
-    // === 
+
+
+    
+
     
 
     

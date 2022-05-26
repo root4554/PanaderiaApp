@@ -2,28 +2,28 @@
   "version": 3,
   "targets": {
     "net6.0": {
-      "Entitdades/1.0.0": {
+      "Entidades/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "compile": {
-          "bin/placeholder/Entitdades.dll": {}
+          "bin/placeholder/Entidades.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Entitdades.dll": {}
+          "bin/placeholder/Entidades.dll": {}
         }
       }
     }
   },
   "libraries": {
-    "Entitdades/1.0.0": {
+    "Entidades/1.0.0": {
       "type": "project",
-      "path": "../Entitdades/Entitdades.csproj",
-      "msbuildProject": "../Entitdades/Entitdades.csproj"
+      "path": "../Entidades/Entidades.csproj",
+      "msbuildProject": "../Entidades/Entidades.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "Entitdades >= 1.0.0"
+      "Entidades >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -32,11 +32,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\1daw3\\panaderia\\data\\data.csproj",
+      "projectUniqueName": "C:\\Users\\1daw3\\panaderia\\data\\data.csproj",
       "projectName": "data",
-      "projectPath": "c:\\Users\\1daw3\\panaderia\\data\\data.csproj",
+      "projectPath": "C:\\Users\\1daw3\\panaderia\\data\\data.csproj",
       "packagesPath": "C:\\Users\\1daw3\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\1daw3\\panaderia\\data\\obj\\",
+      "outputPath": "C:\\Users\\1daw3\\panaderia\\data\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\1daw3\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -53,8 +53,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "c:\\Users\\1daw3\\panaderia\\Entitdades\\Entitdades.csproj": {
-              "projectPath": "c:\\Users\\1daw3\\panaderia\\Entitdades\\Entitdades.csproj"
+            "C:\\Users\\1daw3\\panaderia\\Entidades\\Entidades.csproj": {
+              "projectPath": "C:\\Users\\1daw3\\panaderia\\Entidades\\Entidades.csproj"
             }
           }
         }

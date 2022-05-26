@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\1daw3\\panaderia\\AppSystem\\AppSystem.csproj": {}
+    "C:\\Users\\1daw3\\panaderia\\AppSystem\\AppSystem.csproj": {}
   },
   "projects": {
-    "c:\\Users\\1daw3\\panaderia\\AppSystem\\AppSystem.csproj": {
+    "C:\\Users\\1daw3\\panaderia\\AppSystem\\AppSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\1daw3\\panaderia\\AppSystem\\AppSystem.csproj",
+        "projectUniqueName": "C:\\Users\\1daw3\\panaderia\\AppSystem\\AppSystem.csproj",
         "projectName": "AppSystem",
-        "projectPath": "c:\\Users\\1daw3\\panaderia\\AppSystem\\AppSystem.csproj",
+        "projectPath": "C:\\Users\\1daw3\\panaderia\\AppSystem\\AppSystem.csproj",
         "packagesPath": "C:\\Users\\1daw3\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\1daw3\\panaderia\\AppSystem\\obj\\",
+        "outputPath": "C:\\Users\\1daw3\\panaderia\\AppSystem\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\1daw3\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "c:\\Users\\1daw3\\panaderia\\data\\data.csproj": {
-                "projectPath": "c:\\Users\\1daw3\\panaderia\\data\\data.csproj"
+              "C:\\Users\\1daw3\\panaderia\\data\\data.csproj": {
+                "projectPath": "C:\\Users\\1daw3\\panaderia\\data\\data.csproj"
+              },
+              "C:\\Users\\1daw3\\panaderia\\Entidades\\Entidades.csproj": {
+                "projectPath": "C:\\Users\\1daw3\\panaderia\\Entidades\\Entidades.csproj"
               }
             }
           }
@@ -62,14 +65,14 @@
         }
       }
     },
-    "c:\\Users\\1daw3\\panaderia\\data\\data.csproj": {
+    "C:\\Users\\1daw3\\panaderia\\data\\data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\1daw3\\panaderia\\data\\data.csproj",
+        "projectUniqueName": "C:\\Users\\1daw3\\panaderia\\data\\data.csproj",
         "projectName": "data",
-        "projectPath": "c:\\Users\\1daw3\\panaderia\\data\\data.csproj",
+        "projectPath": "C:\\Users\\1daw3\\panaderia\\data\\data.csproj",
         "packagesPath": "C:\\Users\\1daw3\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\1daw3\\panaderia\\data\\obj\\",
+        "outputPath": "C:\\Users\\1daw3\\panaderia\\data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\1daw3\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -86,8 +89,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "c:\\Users\\1daw3\\panaderia\\Entitdades\\Entitdades.csproj": {
-                "projectPath": "c:\\Users\\1daw3\\panaderia\\Entitdades\\Entitdades.csproj"
+              "C:\\Users\\1daw3\\panaderia\\Entidades\\Entidades.csproj": {
+                "projectPath": "C:\\Users\\1daw3\\panaderia\\Entidades\\Entidades.csproj"
               }
             }
           }
@@ -120,14 +123,14 @@
         }
       }
     },
-    "c:\\Users\\1daw3\\panaderia\\Entitdades\\Entitdades.csproj": {
+    "C:\\Users\\1daw3\\panaderia\\Entidades\\Entidades.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\1daw3\\panaderia\\Entitdades\\Entitdades.csproj",
-        "projectName": "Entitdades",
-        "projectPath": "c:\\Users\\1daw3\\panaderia\\Entitdades\\Entitdades.csproj",
+        "projectUniqueName": "C:\\Users\\1daw3\\panaderia\\Entidades\\Entidades.csproj",
+        "projectName": "Entidades",
+        "projectPath": "C:\\Users\\1daw3\\panaderia\\Entidades\\Entidades.csproj",
         "packagesPath": "C:\\Users\\1daw3\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\1daw3\\panaderia\\Entitdades\\obj\\",
+        "outputPath": "C:\\Users\\1daw3\\panaderia\\Entidades\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\1daw3\\AppData\\Roaming\\NuGet\\NuGet.Config",

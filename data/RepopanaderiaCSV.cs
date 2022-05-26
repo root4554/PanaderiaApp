@@ -30,16 +30,8 @@ namespace data;
                 var campos = item.Split(",");
                 var nombreTienda = campos[0];
                 var nombreDueño = campos[1];
-                var cantidadPan = campos[2];
-                var cantidadPanDict = new Dictionary<string, int>();
-                var cantidadPanSplit = cantidadPan.Split(";");
-                foreach (var item2 in cantidadPanSplit)
-                {
-                    var pan = item2.Split(":")[0];
-                    var cantidad = int.Parse(item2.Split(":")[1]);
-                    cantidadPanDict.Add(pan, cantidad);
-                }
-                var tienda = new Tienda(nombreTienda, nombreDueño, cantidadPanDict);
+                var CantidadDepan = int.Parse(campos[2]);
+                var tienda = new Tienda(nombreTienda, nombreDueño, CantidadDepan);
                 panaderias.Add(tienda);
             }
             return panaderias;

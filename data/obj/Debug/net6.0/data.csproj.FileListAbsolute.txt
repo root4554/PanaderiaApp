@@ -1,0 +1,15 @@
+C:\Users\1daw3\panaderia\data\bin\Debug\net6.0\data.deps.json
+C:\Users\1daw3\panaderia\data\bin\Debug\net6.0\data.dll
+C:\Users\1daw3\panaderia\data\bin\Debug\net6.0\data.pdb
+C:\Users\1daw3\panaderia\data\bin\Debug\net6.0\Entidades.dll
+C:\Users\1daw3\panaderia\data\bin\Debug\net6.0\Entidades.pdb
+C:\Users\1daw3\panaderia\data\obj\Debug\net6.0\data.csproj.AssemblyReference.cache
+C:\Users\1daw3\panaderia\data\obj\Debug\net6.0\data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\1daw3\panaderia\data\obj\Debug\net6.0\data.AssemblyInfoInputs.cache
+C:\Users\1daw3\panaderia\data\obj\Debug\net6.0\data.AssemblyInfo.cs
+C:\Users\1daw3\panaderia\data\obj\Debug\net6.0\data.csproj.CoreCompileInputs.cache
+C:\Users\1daw3\panaderia\data\obj\Debug\net6.0\data.csproj.CopyComplete
+C:\Users\1daw3\panaderia\data\obj\Debug\net6.0\data.dll
+C:\Users\1daw3\panaderia\data\obj\Debug\net6.0\refint\data.dll
+C:\Users\1daw3\panaderia\data\obj\Debug\net6.0\data.pdb
+C:\Users\1daw3\panaderia\data\obj\Debug\net6.0\ref\data.dll

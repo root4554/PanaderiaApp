@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\1daw3\\panaderia\\Entitdades\\Entitdades.csproj",
-      "projectName": "Entitdades",
-      "projectPath": "C:\\Users\\1daw3\\panaderia\\Entitdades\\Entitdades.csproj",
+      "projectUniqueName": "C:\\Users\\1daw3\\panaderia\\Entidades\\Entidades.csproj",
+      "projectName": "Entidades",
+      "projectPath": "C:\\Users\\1daw3\\panaderia\\Entidades\\Entidades.csproj",
       "packagesPath": "C:\\Users\\1daw3\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\1daw3\\panaderia\\Entitdades\\obj\\",
+      "outputPath": "C:\\Users\\1daw3\\panaderia\\Entidades\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\1daw3\\AppData\\Roaming\\NuGet\\NuGet.Config",

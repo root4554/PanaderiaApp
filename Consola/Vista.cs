@@ -14,7 +14,7 @@ namespace Consola
         public List<T> EnumToList<T>() => new List<T>(Enum.GetValues(typeof(T)).Cast<T>());
 
         // ===== METODOS DE PRESNTACION =====
-        public void LimpiarPantalla() => Clear();
+         public void LimpiarPantalla() => Clear();
         public void MostrarYReturn(Object obj, ConsoleColor color = ConsoleColor.White)
         {
             ForegroundColor = color;
