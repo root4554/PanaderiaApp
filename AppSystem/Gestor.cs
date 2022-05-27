@@ -10,73 +10,63 @@ public class Gestor
     public Gestor(RepoPanaderiaCSV repoPanaderia)
     {
         _repoPanaderia = repoPanaderia;
-        panaderias = _repoPanaderia.Leer();
+        clientes = _repoPanaderia.Leer();
     }
     RepoPanaderiaCSV _repoPanaderia;
-    public List<Tienda> panaderias {get; set;} = new();
+    public List<Tienda> clientes { get; set; } = new();
+    public Panderia panderia { get; set; } = new(0);
 
     // === Gestion de tiendas ===
     public void RegistrarIngreso(Tienda t)
     {
-        panaderias.Add(t);
-        _repoPanaderia.Guardar(panaderias);
+        clientes.Add(t);
+        _repoPanaderia.Guardar(clientes);
     }
 
-   // === Add Stock ===
-    public void AddStock(Panderia p, int cantidad)
+    // === anadir Stock ===
+    public void AnadirStock( int cantidad)
     {
-        p.StockDelDia += cantidad;
-        _repoPanaderia.Guardar(panaderias);
+        panderia.StockDelDia += cantidad;
     }
-    
+    // === Mostrar Stock ===
+
+    public int MostrarStock()
+    {
+        return panderia.StockDelDia;
+    }
+
     // === borrar Tienda ===
-    public void BorrarTienda(Tienda tienda)
+    public void BorrarTienda(Tienda t)
     {
-        panaderias.Remove(tienda);
-        _repoPanaderia.Guardar(panaderias);
+        clientes.Remove(t);
+        _repoPanaderia.Guardar(clientes);
     }
+
+    // === restar cantidad ===
+    public void RestarCantidad(int cantidad)
+    {
+        panderia.StockDelDia -= cantidad;
+    }
+
+    // === summar credito ===  
+    public void SumarCredito(Tienda t, int cantidad)
+    {
+
+        t.Credito += cantidad * panderia.PrecioDepan;
+        _repoPanaderia.Guardar(clientes);
+    }
+
+    // === Mostrar credito ===
+    public double MostrarCredito(Tienda t)
+    {
+        return t.Credito;
+    }
+
 
     // === buscar Tienda ===
     public Tienda BuscarTienda(string nombreTienda)
-        => panaderias.Find(t => t.NombreTienda == nombreTienda);
-    
+        => clientes.Find(t => t.NombreTienda == nombreTienda);
+
     // === listar Tiendas ===
-    public List<Tienda> ListarTiendas()
-    {
-        return panaderias;
-    }
-    
 
-    // === buscar panes ===
-    public double BuscarPanes(string pan, Dictionary<string, double> precioPan){
-        if(precioPan.ContainsKey(pan)){
-            return precioPan[pan];
-        }
-        else
-        {
-            return 0;
-        }
-    }
-        
-    // === Buscar Stock ===
-    public int BuscarStock(string pan,Dictionary<string, int> cantidadPan){
-        if(cantidadPan.ContainsKey(pan)){
-            return cantidadPan[pan];
-        }
-        else
-        {
-            return 0;
-        }
-    }
-    
-    // === Hacer compra ===
-     
-
-
-
-    
-
-    
-
-    
 }

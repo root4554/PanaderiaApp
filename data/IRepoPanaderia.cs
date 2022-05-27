@@ -6,6 +6,6 @@ namespace data;
 public interface IRepoPanaderia<T>
     {
 
-        public void Guardar(List<T> datos);
-        public List<T> Leer();
+         void Guardar(List<T> datos);
+         List<T> Leer();
     }

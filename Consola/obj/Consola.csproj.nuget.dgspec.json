@@ -1,38 +1,36 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\1daw3\\panaderia\\Consola\\Consola.csproj": {}
+    "C:\\Users\\Anass\\PanaderiaApp\\Consola\\Consola.csproj": {}
   },
   "projects": {
-    "C:\\Users\\1daw3\\panaderia\\AppSystem\\AppSystem.csproj": {
+    "C:\\Users\\Anass\\PanaderiaApp\\AppSystem\\AppSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\1daw3\\panaderia\\AppSystem\\AppSystem.csproj",
+        "projectUniqueName": "C:\\Users\\Anass\\PanaderiaApp\\AppSystem\\AppSystem.csproj",
         "projectName": "AppSystem",
-        "projectPath": "C:\\Users\\1daw3\\panaderia\\AppSystem\\AppSystem.csproj",
-        "packagesPath": "C:\\Users\\1daw3\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\1daw3\\panaderia\\AppSystem\\obj\\",
+        "projectPath": "C:\\Users\\Anass\\PanaderiaApp\\AppSystem\\AppSystem.csproj",
+        "packagesPath": "C:\\Users\\Anass\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Anass\\PanaderiaApp\\AppSystem\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\1daw3\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Anass\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\1daw3\\panaderia\\data\\data.csproj": {
-                "projectPath": "C:\\Users\\1daw3\\panaderia\\data\\data.csproj"
+              "C:\\Users\\Anass\\PanaderiaApp\\data\\data.csproj": {
+                "projectPath": "C:\\Users\\Anass\\PanaderiaApp\\data\\data.csproj"
               },
-              "C:\\Users\\1daw3\\panaderia\\Entidades\\Entidades.csproj": {
-                "projectPath": "C:\\Users\\1daw3\\panaderia\\Entidades\\Entidades.csproj"
+              "C:\\Users\\Anass\\PanaderiaApp\\Entidades\\Entidades.csproj": {
+                "projectPath": "C:\\Users\\Anass\\PanaderiaApp\\Entidades\\Entidades.csproj"
               }
             }
           }
@@ -61,39 +59,37 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files (x86)\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\1daw3\\panaderia\\Consola\\Consola.csproj": {
+    "C:\\Users\\Anass\\PanaderiaApp\\Consola\\Consola.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\1daw3\\panaderia\\Consola\\Consola.csproj",
+        "projectUniqueName": "C:\\Users\\Anass\\PanaderiaApp\\Consola\\Consola.csproj",
         "projectName": "Consola",
-        "projectPath": "C:\\Users\\1daw3\\panaderia\\Consola\\Consola.csproj",
-        "packagesPath": "C:\\Users\\1daw3\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\1daw3\\panaderia\\Consola\\obj\\",
+        "projectPath": "C:\\Users\\Anass\\PanaderiaApp\\Consola\\Consola.csproj",
+        "packagesPath": "C:\\Users\\Anass\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Anass\\PanaderiaApp\\Consola\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\1daw3\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Anass\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\1daw3\\panaderia\\AppSystem\\AppSystem.csproj": {
-                "projectPath": "C:\\Users\\1daw3\\panaderia\\AppSystem\\AppSystem.csproj"
+              "C:\\Users\\Anass\\PanaderiaApp\\AppSystem\\AppSystem.csproj": {
+                "projectPath": "C:\\Users\\Anass\\PanaderiaApp\\AppSystem\\AppSystem.csproj"
               },
-              "C:\\Users\\1daw3\\panaderia\\Entidades\\Entidades.csproj": {
-                "projectPath": "C:\\Users\\1daw3\\panaderia\\Entidades\\Entidades.csproj"
+              "C:\\Users\\Anass\\PanaderiaApp\\Entidades\\Entidades.csproj": {
+                "projectPath": "C:\\Users\\Anass\\PanaderiaApp\\Entidades\\Entidades.csproj"
               }
             }
           }
@@ -122,36 +118,34 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files (x86)\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\1daw3\\panaderia\\data\\data.csproj": {
+    "C:\\Users\\Anass\\PanaderiaApp\\data\\data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\1daw3\\panaderia\\data\\data.csproj",
+        "projectUniqueName": "C:\\Users\\Anass\\PanaderiaApp\\data\\data.csproj",
         "projectName": "data",
-        "projectPath": "C:\\Users\\1daw3\\panaderia\\data\\data.csproj",
-        "packagesPath": "C:\\Users\\1daw3\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\1daw3\\panaderia\\data\\obj\\",
+        "projectPath": "C:\\Users\\Anass\\PanaderiaApp\\data\\data.csproj",
+        "packagesPath": "C:\\Users\\Anass\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Anass\\PanaderiaApp\\data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\1daw3\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Anass\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\1daw3\\panaderia\\Entidades\\Entidades.csproj": {
-                "projectPath": "C:\\Users\\1daw3\\panaderia\\Entidades\\Entidades.csproj"
+              "C:\\Users\\Anass\\PanaderiaApp\\Entidades\\Entidades.csproj": {
+                "projectPath": "C:\\Users\\Anass\\PanaderiaApp\\Entidades\\Entidades.csproj"
               }
             }
           }
@@ -180,28 +174,26 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files (x86)\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\1daw3\\panaderia\\Entidades\\Entidades.csproj": {
+    "C:\\Users\\Anass\\PanaderiaApp\\Entidades\\Entidades.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\1daw3\\panaderia\\Entidades\\Entidades.csproj",
+        "projectUniqueName": "C:\\Users\\Anass\\PanaderiaApp\\Entidades\\Entidades.csproj",
         "projectName": "Entidades",
-        "projectPath": "C:\\Users\\1daw3\\panaderia\\Entidades\\Entidades.csproj",
-        "packagesPath": "C:\\Users\\1daw3\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\1daw3\\panaderia\\Entidades\\obj\\",
+        "projectPath": "C:\\Users\\Anass\\PanaderiaApp\\Entidades\\Entidades.csproj",
+        "packagesPath": "C:\\Users\\Anass\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Anass\\PanaderiaApp\\Entidades\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\1daw3\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Anass\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -234,7 +226,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files (x86)\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

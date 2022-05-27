@@ -4,44 +4,39 @@ using System.Linq;
 using Entidades;
 
 namespace data;
- public class RepoPanaderiaCSV : IRepoPanaderia<Tienda>
+public class RepoPanaderiaCSV : IRepoPanaderia<Tienda>
+{
+    string _path = "../RepoPanaderiaCSV.csv";
+
+    //persistencia
+    public void Guardar(List<Tienda> clientes)
     {
-        string _path = "../RepoPanaderiaCSV.csv";
-
-        //persistencia
-        public void Guardar(List<Tienda> panaderia)
+        List<string> data = new() { };
+        foreach (var item in clientes)
         {
-            List<string> data = new() { };
-            foreach (var item in panaderia)
-            {
-                var str = $"{item.NombreTienda},{item.NombreDueño},{item.CantidadDepan}";
-                data.Add(str);
-            }
-            File.WriteAllLines(_path, data);
+            var str = $"{item.NombreTienda},{item.NombreDueño},{item.Credito}";
+            data.Add(str);
         }
-
-        //lectura
-        public List<Tienda> Leer()
-        {
-            List<Tienda> panaderias = new();
-            var data = File.ReadAllLines(_path).Where(l => l.Length > 0).ToList();
-            foreach (var item in data)
-            {
-                var campos = item.Split(",");
-                var nombreTienda = campos[0];
-                var nombreDueño = campos[1];
-                var CantidadDepan = int.Parse(campos[2]);
-                var tienda = new Tienda(nombreTienda, nombreDueño, CantidadDepan);
-                panaderias.Add(tienda);
-            }
-            return panaderias;
-        }
+        File.WriteAllLines(_path, data);
     }
 
-    //              Tienda panderia = new Tienda(campos[0], campos[1], int.Parse(campos[2]));
-    //             panaderias.Add(panderia);
-    //         }
-    //         return panaderias;
-    //     }
-    // }
+    //lectura
+    public List<Tienda> Leer()
+    {
+        List<Tienda> clientes = new();
+        var data = File.ReadAllLines(_path).Where(l => l.Length > 0).ToList();
+        foreach (var item in data)
+        {
+            var campos = item.Split(",");
+            var nombreTienda = campos[0];
+            var nombreDueño = campos[1];
+            var credito = int.Parse(campos[2]);
+            var tienda = new Tienda(nombreTienda, nombreDueño, credito);
+            clientes.Add(tienda);
+        }
+        return clientes;
+
+    }
+}
+
 

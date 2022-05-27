@@ -1,57 +1,36 @@
 ﻿namespace Entidades;
 
 
-    public class Tienda
+public class Tienda
+{
+    public string NombreTienda { get; set; }
+    public string NombreDueño { get; set; }
+    public double Credito { get; set; }
+
+
+
+
+    public Tienda(string nombreTienda, string nombreDueño, double credito)
     {
-        public string NombreTienda {get; set;}
-        public string NombreDueño {get; set;}
-        public int CantidadDepan {get; set;}
-        
-
-        
-
-        public Tienda(string nombreTienda, string nombreDueño, int cantidadDepan){
-            NombreTienda = nombreTienda;
-            NombreDueño = nombreDueño;
-            CantidadDepan = cantidadDepan;
-            }
-
-        public override string ToString()=>$"Nombre de la tienda: {NombreTienda} \nNombre del dueño: {NombreDueño} \nCantidad de pan: {CantidadDepan}";
+        NombreTienda = nombreTienda;
+        NombreDueño = nombreDueño;
+        Credito = credito;
     }
-    public class Panderia
+
+    public override string ToString() => $"Nombre de la tienda: {NombreTienda}\tNombre del dueño: {NombreDueño}\t   Su Credito: {Credito} EURO ";
+}
+public class Panderia
+{
+    public int StockDelDia { get; set; }
+    public double PrecioDepan { get; set; }
+
+    public Panderia(int stockDelDia)
     {
-        public int StockDelDia {get; set;}
-        
-        public Panderia(int stockDelDia){
-            StockDelDia = stockDelDia;
-            }
-
-        public override string ToString()=>$"Nombre de la tienda: {StockDelDia} \n";
+        StockDelDia = stockDelDia;
+        PrecioDepan = 1.20;
     }
-    public class Pan
-    {
-        public enum Tipo
-        {
-            Bagguette,
-            Integral,
-            Centeno,
-            Maiz,
-        }
 
-        public Tipo tipo { get; set; }
 
-        public decimal precio
-        {
-            get
-            {
-                decimal precio = tipo switch
-                {
-                    Tipo.Bagguette =>0.50m,
-                    Tipo.Integral => 1.00m,
-                    Tipo.Centeno => 2.00m,
-                    Tipo.Maiz => 3.00m
-                };
-                return precio;
-            }
-        }
-    }
+    public override string ToString() => $"Nombre de la tienda: {StockDelDia} UNIDAD\n";
+}
+
