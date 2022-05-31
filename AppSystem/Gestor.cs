@@ -62,11 +62,12 @@ public class Gestor
         return t.Credito;
     }
 
-
-    // === buscar Tienda ===
-    public Tienda BuscarTienda(string nombreTienda)
-        => clientes.Find(t => t.NombreTienda == nombreTienda);
-
-    // === listar Tiendas ===
+    // === Pagar credito ===
+    public void PagarCredito(Tienda t, double pago)
+    {
+        t.Credito -= pago;
+        _repoPanaderia.Guardar(clientes);
+    }
+    
 
 }

@@ -20,6 +20,7 @@ class Controlador
                 { "Registrar una nueva tienda", RegistrarIngreso },
                 { "Mostrar lista de Clientes/Tiendas", ListarTiendas },
                 { "Hacer un Pedido", Hacerpedido},
+                { "Pagar Credito de Cliente", PagarCredito},
                 { "Borrar un cliente/tienda", BorrarTienda}
             };
     }
@@ -80,30 +81,48 @@ class Controlador
     private void Hacerpedido()
     {
         try
-        {
-            ListarTiendas();
-
-            var idc = _vista.TryObtenerValorEnRangoInt(1, _sistema.clientes.Count, "Seleccione una tienda");
-            var cliente = _sistema.clientes[idc - 1];
-            var cp = _vista.TryObtenerDatoDeTipo<int>("Mete la Cantidad de pan que va pedir (UNIDAD)");
-            if(cp > _sistema.MostrarStock())
+        {   _vista.Mostrar("1- Persona");
+            _vista.Mostrar("2- Tienda");
+            var opcion = _vista.TryObtenerDatoDeTipo<int>("Selecciona una opción");
+            if(opcion == 1 || opcion == 2)
             {
-                _vista.Mostrar("No hay stock suficiente");
-                _vista.Mostrar("Stock actual: " + _sistema.MostrarStock());
-                return;
+                var cp = _vista.TryObtenerDatoDeTipo<int>("Mete la Cantidad de pan que va pedir (UNIDAD)");
+                if(cp > _sistema.MostrarStock())
+                {
+                    _vista.Mostrar("No hay stock suficiente");
+                    _vista.Mostrar("Stock actual: " + _sistema.MostrarStock());
+                    return;
+                }
+
+                else
+                {
+                    if(opcion == 1)
+                    {
+                        _sistema.RestarCantidad(cp);
+                    }
+
+                    if(opcion == 2)
+                    {
+                        ListarTiendas();
+
+                        var idc = _vista.TryObtenerValorEnRangoInt(1, _sistema.clientes.Count, "Seleccione una tienda");
+                        var cliente = _sistema.clientes[idc - 1];
+                                                
+                        _sistema.RestarCantidad(cp);
+                        _sistema.SumarCredito(cliente, cp);
+                        _vista.Mostrar("Credito actual: " + _sistema.MostrarCredito(cliente) +" EURO");
+                        
+                    }
+                    _vista.Mostrar("Pedido realizado");
+                    _vista.Mostrar("Stock actual: " + _sistema.MostrarStock());
+                }
+                
             }
             else
             {
-                _sistema.RestarCantidad(cp);
-                _sistema.SumarCredito(cliente, cp);
-                _vista.Mostrar("Pedido realizado");
-                _vista.Mostrar("Credito actual: " + _sistema.MostrarCredito(cliente) +" EURO");
-
+                _vista.Mostrar("Opcion no valida");
+                return;
             }
-            _vista.Mostrar("Stock actual: " + _sistema.MostrarStock());
-            
-
-
         }
         catch (Exception e)
         {
@@ -111,6 +130,26 @@ class Controlador
         }
     }
 
+    //Pagar Credito
+
+    private void PagarCredito()
+    {
+        try
+        {
+            ListarTiendas();
+            var idc = _vista.TryObtenerValorEnRangoInt(1, _sistema.clientes.Count, "Seleccione una tienda");
+            var cliente = _sistema.clientes[idc - 1];
+
+            var cp = _vista.TryObtenerDatoDeTipo<int>("Cuanto va a pagar?");
+            _sistema.PagarCredito(cliente, cp);
+            _vista.Mostrar("Credito actual: " + _sistema.MostrarCredito(cliente) + " EURO");
+        }
+        catch (Exception e)
+        {
+            _vista.Mostrar($"UC: {e.Message}");
+        }
+    }
+    //borrar tiendas
     private void BorrarTienda()
     {
         try
@@ -120,20 +159,28 @@ class Controlador
             var idc = _vista.TryObtenerValorEnRangoInt(1, _sistema.clientes.Count, "Seleccione una tienda  ");
             var cliente = _sistema.clientes[idc - 1];
 
-            _sistema.clientes.Remove(cliente);
-            _vista.Mostrar("se va borrar todos los datos de la tienda" + $"Tienda: {cliente.NombreTienda}");
+            if( _sistema.MostrarCredito(cliente)>0)
+            {
+                _vista.Mostrar("No se puede borrar tienda con credito");
+                return;
+            }
+            else
+            {
+                _sistema.BorrarTienda(cliente);
+                _vista.Mostrar("se va borrar todos los datos de la tienda" + $"Tienda: {cliente.NombreTienda}");
+            }
         }
         catch (Exception e)
         {
             _vista.Mostrar($"UC: {e.Message}");
         }
     }
-
+    //Mostrar Stock
     public void MostrarStock()
     {
         _vista.Mostrar("Stock actual: " + _sistema.MostrarStock() +" UNIDAD");
     }
-   
+   //Mostrar lista de clientes/tiendas
     public void ListarTiendas()
     {
          _vista.MostrarListaEnumerada<Tienda>("Tiendas/Clientes", _sistema.clientes);
